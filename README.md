@@ -1,2 +1,11 @@
-# lorne_genome_2022
+# Lorne Genome 2022
 Poster presented at Lorne Genome 2022
+
+Classifying whole slide images based on Tumor Infiltrating Lymphocytes using deep learning 
+Rashindrie Perera 1 2 , Roberto Salgado 3 , Peter Savas 2 , Franco Caramia 2 , Jason Li 2 , Sherene Loi 2 , Saman Halgamuge 1
+
+1 School of Electrical, Mechanical and Infrastructure Engineering, University of Melbourne, Parkville, VIC, Australia,
+2 Peter MacCallum Cancer Centre , Melbourne, VIC, Australia,
+3 Department of Pathology, GZA-ZNA Hospitals, Antwerp, Belgium.
+
+Tumor infiltrating Lymphocytes (TILs) are immune cells that have become an important biomarker in multiple tumors due to their favorable correlations with treatment responses and patient survival. The manual reporting of TILs in whole slide images (WSIs) is a labor-intensive task subjected to a degree of ambiguity and inter-observer variability. Consequently, there has been a focus on using deep learning techniques to provide computational TIL analysis that can assist with clinical treatments.  Existing deep learning models that analyze TILs on gigapixel WSIs split the image into patches and use patch level labels to train the models. However, doing so results in a loss of global and neighborhood context which is essential in TIL analysis. Here, we report a WSI processing pipeline termed ANSAC (Annotation-less Segmentation-based attention and classification learning) to classify WSIs using only the slide-level TIL label. ANSAC uses state-of-the-art Convolutional Neural Networks, Self-Supervised learning and Transfer learning to learn an attention-based classifier. We train and evaluate ANSAC on 3165 WSIs from 3 in-house datasets and 1 public dataset. On the multi-center independent test set of 640 WSIs, we achieve 83% balanced accuracy and 92% Area under the curve (AUC) for the binary classification of WSIs, performing better than existing methods and extensions of them. The experiments show conclusive evidence on 1) the superior performance of ANSAC over existing methods for TIL based classification, and 2) the potential to use ANSAC predictions to assist clinical staff in treating patients. Future work includes improving the binary classification to move from a classification label to a direct regression score.  
